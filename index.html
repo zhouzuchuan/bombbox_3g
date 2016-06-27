@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<title>3g bombbox</title>
+<link rel="stylesheet" type="text/css" href="style/css.css">
+</head>
+<body>
+
+
+
+
+<div class="boxStyle"><a href="javascript:void(0);" class="btn_2" wj-bomb-open="1">立即领取</a></div>
+
+
+
+
+
+<!-- 领取成功 -->
+<div class="bomb_box styleBox a1" wj-bomb="1">
+  <div class="box_in">
+    <div style="height:130px">
+        <div class="boxStyle"><a href="javascript:void(0);" class="btn_2" wj-bomb-open="2">立即领取1</a></div>
+    </div>
+    <div><span wj-bomb-back="1" class="btn_1">返回上一个</span></div>
+    <a href="javascript:void(0);" class="box_close_btn" wj-bomb-close="1">&times;</a>
+  </div>
+</div>
+<!-- 领取成功 -->
+<div class="bomb_box styleBox a2" wj-bomb="2">
+  <div class="box_in">
+    <div style="height:110px"><a href="javascript:void(0);" class="btn_2" wj-bomb-open="3">立即领取2</a></div>
+    <div><span wj-bomb-back="2" class="btn_1">返回上一个</span></div>
+    <a href="javascript:void(0);" class="box_close_btn" wj-bomb-close="2">&times;</a>
+  </div>
+</div>
+
+<!-- 领取成功 -->
+<div class="bomb_box styleBox a3" wj-bomb="3">
+  <div class="box_in">
+    <div style="height:90px">3</div>
+    <div><span wj-bomb-back="3" class="btn_1">返回上一个</span></div>
+    <a href="javascript:void(0);" class="box_close_btn" wj-bomb-close="3">&times;</a>
+  </div>
+</div>
+
+
+
+</body>
+<!-- <script src="src/bombbox_3g.js"></script> -->
+<script src="dest/bombbox_3g.min.js"></script>
+<script>
+    Bombbox({
+        selector: 'wj-bomb',
+        bgClose: true,
+        // 关闭之后
+        hideDid: function (a) {
+            // console.log('隐藏之后！',a)
+        },
+        // 显示之前
+        showWill: function (a) {
+            // console.log('显示之前！',a)
+        },
+        // 显示之后
+        showDid: function (a) {
+            // console.log('显示之后！',a)
+        },
+        // 关闭之前
+        hideWill: function (a) {
+            // console.log('隐藏之前！',a)
+        }
+    });
+</script>
+</html>

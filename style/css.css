@@ -1,0 +1,152 @@
+/*
+ * @File Name:     css.css
+ * @Create By:     zhouzuchuan
+ * @Create Time:   2016-06-27 15:32:01
+ * @Modified By:   zhouzuchuan
+ * @Modified Time: 2016-06-27 15:32:37
+ */
+
+
+@charset "utf-8";
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}
+audio,canvas,video{display:inline-block;}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+body{margin:0;}
+div, img { margin: 0; padding: 0; line-height: 1;}
+a:focus{outline:thin dotted;}
+a:active, a:hover{outline:0;}
+b,strong{font-weight:bold;}
+img{border:0; vertical-align: top;}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+dl, dt, dd, p  {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style-type: normal;
+    list-style-position: outside;
+}
+
+html, body { min-height: 100%;}
+
+a {
+    text-decoration: none;
+    color: #333;
+    -webkit-tap-highlight-color: rgba(90, 90, 90, 0);
+}
+
+
+.btn_1 {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    background: green;
+    color: #fff;
+}
+.btn_2 {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    background: #f00;
+    color: #fff;
+}
+
+
+.bomb_box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    font-size: 0;
+    letter-spacing: -4px;
+    z-index: 2;
+    -webkit-transition: .5s;
+    transition: .5s;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+}
+.bomb_box::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    background: red;
+    vertical-align: middle;
+}
+.bomb_box .box_in {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    background: #fff;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 12px;
+    letter-spacing: 0;
+    border-radius: 5px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    opacity: 0;
+}
+.bomb_box .box_footer {
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+.bomb_box .box_close_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    color: #999;
+    font-size: 28px;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+
+.bomb_box.current {
+    opacity: 1;
+    visibility: visible;
+}
+.bomb_box.current .box_in {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.styleBox .box_in {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
